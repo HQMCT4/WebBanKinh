@@ -1,14 +1,11 @@
-
-@{
-    Layout = null;
-}
-
-
+<?php
+include("../include/new-taikhoan.php");
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Creative Colorlib SignUp Form</title>
+    <title>Đăng ký</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="application/x-javascript">
@@ -52,7 +49,7 @@
                 <a href="#footer-page" class="item">Liên hệ</a>
 
                 <a href="../Home/trangchu.php" class="logo"><img src="../../img/HQM.png" width="180px" height="80px" alt=""></a>
-                <a href="" class="item">Giỏ Hàng</a>
+                <a href="../User/giohang.php" class="item">Giỏ Hàng</a>
                 <a href="../User/dangky.php" class="item">Đăng ký</a>
                 <a href="../User/dangnhap.php" class="item">Đăng nhập</a>
 
@@ -60,36 +57,35 @@
         </div>
         <!-- main -->
         <div class="main-w3layouts wrapper">
-            
+
             <div class="main-agileinfo">
                 <div class="agileits-top">
+                    <p><?php echo !empty($result) ? $result : ''; ?></p>
                     <form action="#" method="post">
-                    <h1>SignUp Form</h1>
-                            <input class="text w3lpass" type="text" name="HoTen" id="HoTen" placeholder="Họ Tên" required="">
+                        <h1>Đăng ký</h1>
+                        <input class="text w3lpass" type="text" name="HoTen" id="HoTen" placeholder="Họ Tên" required="">
 
-                            <input class="text w3lpass" type="text" name="TaiKhoan" id="TaiKhoan" placeholder="Tài Khoản" required="">
+                        <input class="text w3lpass" type="text" name="TaiKhoan" id="TaiKhoan" placeholder="Tài Khoản" required="">
 
-                            <input class="text w3lpass" type="password" name="MatKhau" id="MatKhau" placeholder="Mật Khẩu" required="">
-                      
-                            <input class="text w3lpass" type="password" name="XacNhanMatKhau" id="XacNhanMatKhau" placeholder="Xác Nhận Mật Khẩu" required="">
-                          
-                            <input class="text w3lpass" type="email" name="Email" id="Email" placeholder="Email" required="">
-                           
-                            <input class="text w3lpass" type="text" name="DienThoaiKH" id="DienThoaiKH" placeholder="Số Điện Thoại" required="">
-                         
-                            <input class="text w3lpass" type="text" name="DiaChiKH" id="DiaChiKH" placeholder="Địa Chỉ" required="">
-                         
-                            <div class="wthree-text">
-                                <label class="anim">
-                                    <input type="checkbox" class="checkbox" required="">
-                                    <span>I Agree To The Terms & Conditions</span>
-                                </label>
-                                <div class="clear"> </div>
-                            </div>
-                            <input type="submit" value="SIGNUP">
+                        <input class="text w3lpass" type="password" name="MatKhau" id="MatKhau" placeholder="Mật Khẩu" required="">
+
+                        <input class="text w3lpass" type="email" name="Email" id="Email" placeholder="Email" required="">
+
+                        <input class="text w3lpass" type="text" name="SoDienThoaiKH" id="DienThoaiKH" placeholder="Số Điện Thoại" required="">
+
+                        <input class="text w3lpass" type="text" name="DiaChiKH" id="DiaChiKH" placeholder="Địa Chỉ" required="">
+
+                        <div class="wthree-text">
+                            <label class="anim">
+                                <input type="checkbox" class="checkbox" required="">
+                                <span>I Agree To The Terms & Conditions</span>
+                            </label>
+                            <div class="clear"> </div>
+                        </div>
+                        <input type="submit" value="SIGNUP" name="save" class="btn btn-primary">
 
                     </form>
-                    <p>Don't have an Account? <a href="../User/dangnhap.php"> Login Now!</a></p>
+                    <p>Đã có tài khoản? <a href="../User/dangnhap.php"> Đăng nhập!</a></p>
                 </div>
             </div>
             <!-- copyright -->
@@ -111,8 +107,7 @@
             </ul>
         </div>
     </div>
-        <!-- //main -->
+    <!-- //main -->
 </body>
 
 </html>
-

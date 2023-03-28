@@ -39,7 +39,7 @@
                 <a href="#footer-page" class="item">Liên hệ</a>
 
                 <a href="../Home/trangchu.php" class="logo"><img src="../../img/HQM.png" width="180px" height="80px" alt=""></a>
-                <a href="" class="item">Giỏ Hàng</a>
+                <a href="../User/giohang.php" class="item">Giỏ Hàng</a>
                 <a href="../User/dangky.php" class="item">Đăng ký</a>
                 <a href="../User/dangnhap.php" class="item">Đăng nhập</a>
 
