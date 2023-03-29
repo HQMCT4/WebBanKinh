@@ -1,4 +1,4 @@
-<?php include('../include/funtions.php') ?>
+
 <?php include_once("../include/header.php");?>
 
 <div class="navbar">
@@ -12,10 +12,9 @@
                     <div>
                     </div>
                 </div>
-                <!-- <script src="/js/popup.js"></script> -->
             </div>
             <div class="clear"></div>
         </div>
         <h2 style="padding-left:775px">Mắt Kính Nữ HQM</h2>
-        <?php spnu() ?>
+       
 <?php include_once("../include/footer.php");?>
