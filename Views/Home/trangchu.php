@@ -1,10 +1,8 @@
 <?php
 session_start();
-$TaiKhoan= $_SESSION['DangNhap'];
-if(empty($TaiKhoan))
-{
-  header("location:../User/DangNhap.php");
-}
+error_reporting(0);
+include('../../Connect/config.php');
+
 ?>
 <?php include('../include/funtions.php') ?>
 <?php include_once("../include/header.php") ?>
