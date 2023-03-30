@@ -1,6 +1,14 @@
 <?php
-$con=new mysqli('localhost','root','','webbankinh');
-if(!$con){
-    die(mysqli_error($con));
+$servername = "localhost";
+$username = "root";
+$password = "";
+$databasename = "webbankinh";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $databasename);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
 ?>

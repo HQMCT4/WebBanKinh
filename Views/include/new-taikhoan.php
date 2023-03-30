@@ -14,7 +14,7 @@ if (isset($save)) {
     ];
 
     $tableName = "ttkhachhang";
-    $db = $con;
+    $db = $conn;
     $result = insert_data($db, $tableName, $inputData);
 }
 
