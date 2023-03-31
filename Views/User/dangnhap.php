@@ -28,7 +28,7 @@ include("../include/login-taikhoan.php");
 
             <div class="menu">
                 <div class="drop">
-                    <a href="../Home/trangchu.php" class="item ">Sản phẩm</a>
+                    <a href="../Home/sanpham.php" class="item ">Sản phẩm</a>
                     <div class="drop-menu">
                         <a href="../Home/matkinhnu.php">Mắt kính nữ</a>
                         <a href="../Home/matkinhnam.php">Mắt kính nam</a>
