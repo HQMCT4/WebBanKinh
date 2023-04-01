@@ -38,9 +38,9 @@ function fetch_data($db, $tableName, $columns)
 
 function spmoi()
 {
-    global $con;
+    global $conn;
     $sql = "SELECT * FROM kinh ORDER BY MaKinh ASC LIMIT 8";
-    $rs = mysqli_query($con, $sql);
+    $rs = mysqli_query($conn, $sql);
     while ($row_data = mysqli_fetch_assoc($rs)) {
         $MaKinh = $row_data['MaKinh'];
         $TenKinh = $row_data['TenKinh'];
@@ -64,9 +64,9 @@ function spmoi()
 // sản phâm nam
 function spnam()
 {
-    global $con;
+    global $conn;
     $sql = "SELECT * FROM kinh WHERE MaLoaiKinh = 2 ORDER BY MaKinh ASC LIMIT 8";
-    $rs = mysqli_query($con, $sql);
+    $rs = mysqli_query($conn, $sql);
     while ($row_data = mysqli_fetch_assoc($rs)) {
 
         $MaKinh = $row_data['MaKinh'];
@@ -92,9 +92,9 @@ function spnam()
 // sản phẩm nữ
 function spnu()
 {
-    global $con;
+    global $conn;
     $sql = "SELECT * FROM kinh WHERE MaLoaiKinh = 1 ORDER BY MaKinh ASC LIMIT 8";
-    $rs = mysqli_query($con, $sql);
+    $rs = mysqli_query($conn, $sql);
     while ($row_data = mysqli_fetch_assoc($rs)) {
 
         $MaKinh = $row_data['MaKinh'];
@@ -120,9 +120,9 @@ function spnu()
 // sản phẩm trẻ em
 function sptreem()
 {
-    global $con;
+    global $conn;
     $sql = "SELECT * FROM kinh WHERE MaLoaiKinh = 3 ORDER BY MaKinh ASC LIMIT 8";
-    $rs = mysqli_query($con, $sql);
+    $rs = mysqli_query($conn, $sql);
     while ($row_data = mysqli_fetch_assoc($rs)) {
 
         $MaKinh = $row_data['MaKinh'];

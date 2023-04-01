@@ -1,4 +1,10 @@
 <?php
+session_start();
+error_reporting(0);
+include('../../Connect/config.php');
+
+?>
+<?php
 include('../include/funtions.php');
 
 $result = mysqli_query($conn, 'SELECT count(MaKinh) as total from kinh');
