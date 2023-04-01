@@ -26,6 +26,9 @@
             </div>
 
             <div class="menu">
+                <?php if (strlen($_SESSION['login'])) {   ?>
+                    <a href="#"><i class="item"></i>Welcome <?php echo htmlentities($_SESSION['username']); ?></a>
+                <?php } ?>
                 <div class="drop">
                     <a href="../Home/sanpham.php" class="item ">Sản phẩm</a>
                     <div class="drop-menu">
@@ -39,9 +42,19 @@
                 <a href="#footer-page" class="item">Liên hệ</a>
 
                 <a href="../Home/trangchu.php" class="logo"><img src="../../img/HQM.png" width="180px" height="80px" alt=""></a>
-                <a href="" class="item">Giỏ Hàng</a>
-                <a href="../User/dangky.php" class="item">Đăng ký</a>
-                <a href="../User/dangnhap.php" class="item">Đăng nhập</a>
+
+                <?php if (strlen($_SESSION['login'])) {   ?>
+                    <a href="../Home/giohang.php" class="item">Giỏ Hàng</a>
+                    <a href="../User/myaccount.php"><i class="item"></i>My Account</a>
+                <?php } ?>
+
+                <?php if (strlen($_SESSION['login']) == 0) {   ?>
+                    <a href="../User/dangky.php" class="item">Đăng ký</a>
+                    <a href="../User/dangnhap.php" class="item">Đăng nhập</a>
+                <?php } else { ?>
+
+                    <a href="../User/dangxuat.php"><i class="item"></i>Đăng xuất</a>
+                <?php } ?>
 
             </div>
         </div>

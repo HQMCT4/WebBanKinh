@@ -1,3 +1,9 @@
+<?php
+session_start();
+error_reporting(0);
+include('../../Connect/config.php');
+
+?>
 <?php include('../include/funtions.php') ?>
 <?php include_once("../include/header.php");?>
 

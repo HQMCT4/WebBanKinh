@@ -1,6 +1,11 @@
-<?php include('../include/detail.php') ?>
 <?php
-include_once("../include/header.php"); ?>
+session_start();
+error_reporting(0);
+include('../../Connect/config.php');
+
+?>
+<?php include('../include/detail.php') ?>
+<?php include_once("../include/header.php"); ?>
 
 <div class="navbar">
     <div class="banner">
