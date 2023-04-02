@@ -29,13 +29,13 @@ if (is_array($fetchData)) {
     foreach ($fetchData as $data) {
 ?>
         <div class='signature'>
-                <div class='product'>
+            <div class='product'>
                 <h4 class='productName'><?php echo $data['TenKinh'] ?? ''; ?></h4>
                 <img class='productImg' src='../../img/<?php echo $data['AnhBia'] ?? ''; ?>' width='250'>
                 <p class='productPrice '><?php echo $data['GiaBan'] ?? ''; ?> VNĐ</p>
-                <a href='chitiet.php?detail=<?php echo $data['MaKinh'] ?? ''; ?>' class='productDetail '>Chi tiết</a> 
-                </div>
+                <a href='chitiet.php?id=<?php echo $data['MaKinh'] ?? ''; ?>' class='productDetail '>Chi tiết</a>
             </div>
+        </div>
     <?php
     }
 } else { ?>
@@ -127,37 +127,37 @@ if (is_array($fetchData)) {
 
         </script> -->
 
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-        <script>
-            var swiper = new Swiper('.swiper', {
-                // Optional parameters
-                slidesPerView: 3,
-                direction: getDirection(),
-                loop: true,
+    <script>
+        var swiper = new Swiper('.swiper', {
+            // Optional parameters
+            slidesPerView: 3,
+            direction: getDirection(),
+            loop: true,
 
-                // // If we need pagination
-                // pagination: {
-                //     el: '.swiper-pagination',
-                // },
+            // // If we need pagination
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
 
-                // Navigation arrows
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
 
-                // // And if we need scrollbar
-                // scrollbar: {
-                //     el: '.swiper-scrollbar',
-                // },
-            });
+            // // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+        });
 
-            function getDirection() {
-                var windowWidth = window.innerWidth;
-                var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
 
-                return direction;
-            }
-        </script>
-<?php include_once("../include/footer.php");?>
+            return direction;
+        }
+    </script>
+    <?php include_once("../include/footer.php"); ?>

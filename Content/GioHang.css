@@ -255,6 +255,17 @@ label {
         }
 
 /* Totals section */
+.totals .payment{
+    float: right;
+    clear: both;
+}
+
+.totals .payment label{
+    float: right;
+    clear: both;
+    width: 100%;
+    text-align: right;
+}
 
 .totals .totals-item {
     float: right;
