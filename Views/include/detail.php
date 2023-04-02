@@ -4,8 +4,8 @@ include('../../Connect/config.php');
 $db= $conn;
 $tableName="kinh";
 
-if(isset($_GET['detail'])){
-$id = validate($_GET['detail']);
+if(isset($_GET['id'])){
+$id = validate($_GET['id']);
 $condition= ['MaKinh' =>$id];
 $columns = ['MaKinh', 'MaLoaiKinh', 'MaHSX', 'TenKinh', 'GiaBan', 'MoTa', 'AnhBia', 'NgayCapNhat', 'SoluongTon'];
 $detailData = show_data($db, $tableName, $columns, $condition);

@@ -55,7 +55,7 @@ function spmoi()
                 <h4 class='productName'>$TenKinh</h4>
                 <img class='productImg' src='../../img/$AnhBia' width='250'>
                 <p class='productPrice '>$GiaBan VNĐ</p>
-                <a href=' ' class='productDetail '>Chi tiết</a> 
+                <a href='chitiet.php?id=$MaKinh' class='productDetail '>Chi tiết</a> 
                 </div>
             </div>";
     }
@@ -83,7 +83,7 @@ function spnam()
                 <h4 class='productName'>$TenKinh</h4>
                 <img class='productImg' src='../../img/$AnhBia' width='250'>
                 <p class='productPrice '>$GiaBan VNĐ</p>
-                <a href=' ' class='productDetail '>Chi tiết</a> 
+                <a href='chitiet.php?id=$MaKinh' class='productDetail '>Chi tiết</a> 
                 </div>
             </div>";
     }
@@ -111,7 +111,7 @@ function spnu()
                 <h4 class='productName'>$TenKinh</h4>
                 <img class='productImg' src='../../img/$AnhBia' width='250'>
                 <p class='productPrice '>$GiaBan VNĐ</p>
-                <a href=' ' class='productDetail '>Chi tiết</a> 
+                <a href='chitiet.php?id=$MaKinh' class='productDetail '>Chi tiết</a> 
                 </div>
             </div>";
     }
@@ -139,7 +139,7 @@ function sptreem()
                 <h4 class='productName'>$TenKinh</h4>
                 <img class='productImg' src='../../img/$AnhBia' width='250'>
                 <p class='productPrice '>$GiaBan VNĐ</p>
-                <a href=' ' class='productDetail '>Chi tiết</a> 
+                <a href='chitiet.php?id=$MaKinh' class='productDetail '>Chi tiết</a> 
                 </div>
             </div>";
     }
