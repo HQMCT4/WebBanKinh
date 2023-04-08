@@ -35,7 +35,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
     <div class="clear"></div>
 </div>
 
-<h2 style="padding-left:775px">Chi Tiết Sản Phẩm</h2>
+<h2 style="padding-left:40%">Chi Tiết Sản Phẩm</h2>
 <div class="navbar">
     <div class="content">
         <div class="Detail">

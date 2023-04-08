@@ -21,7 +21,7 @@ include('../../Connect/config.php');
             </div>
             <div class="clear"></div>
         </div>
-        <h2 style="padding-left:775px">Mắt Kính Nữ HQM</h2>
+        <h2 style="padding-left:40%">Mắt Kính Nữ HQM</h2>
         <?php spnu() ?>
        
 <?php include_once("../include/footer.php");?>

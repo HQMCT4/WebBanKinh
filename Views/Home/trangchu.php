@@ -23,7 +23,7 @@ include('../../Connect/config.php');
     <div class="clear"></div>
 </div>
 
-<h2 style="padding-left:775px">Sản Phẩm Mới HQM</h2>
+<h2 style="padding-left: 40%">Sản Phẩm Mới HQM</h2>
 <?php
 if (is_array($fetchData)) {
     foreach ($fetchData as $data) {
